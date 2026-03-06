@@ -9,6 +9,12 @@ This repository contains network configurations for RepublicAI Protocol chains.
 | [Testnet](./testnet/) | `raitestnet_77701-1` | Live | [Validator Guide](./testnet/README.md)|
 | [Mainnet](./mainnet/) | TBD | Coming Soon | - |
 
+## Active Validators (Testnet)
+
+| Moniker | Wallet Address | Role |
+|---------|----------------|------|
+| goldify | rai1kyvgpy7yt6350xkh3h4s5cdm8uhuj3sqhjds9t | Validator |
+
 ## Quick Links
 
 ### Testnet
