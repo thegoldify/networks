@@ -1,36 +1,54 @@
-# Goldify Republic Tools
+# 🚀 RepublicAI Node Operations & Monitoring - goldify
 
-This folder contains a custom monitoring script developed by **goldify** to help RepublicAI node operators track their node health.
-
-### Feature: Node Health Checker
-The `check_health.sh` script provides a quick summary of:
-- System CPU, RAM, and Disk usage.
-- Real-time block height from the local RPC.
-- Sync status (catching_up).
-
-### How to use:
-1. Download the script: `wget https://raw.githubusercontent.com/RepublicAI/networks/main/testnet/goldify/check_health.sh`
-2. Make it executable: `chmod +x check_health.sh`
-3. Run it: `./check_health.sh`
+Bu klasör, **RepublicAI** ağında node işleten kullanıcıların işini kolaylaştırmak için **goldify** tarafından hazırlanmış bir teknik araç ve rapor setidir. "Developer" rolü kapsamında topluluğa katkı sağlamak amacıyla oluşturulmuştur.
 
 ---
-*Contribution for RepublicAI Developer Role*
 
-# 🚀 RepublicAI Node Operations - goldify
+## 🛠 Neyi Geliştirdik? (Node Sağlık Kontrol Aracı)
 
-This repository contains custom scripts and health reports for the **RepublicAI Testnet (raitestnet_77701-1)**, managed by **goldify**.
+Sunucunuzun ve node'unuzun durumunu saniyeler içinde görmeniz için `check_health.sh` adında bir izleme aracı hazırladım. Bu araç şunları raporlar:
 
-## 🛠 Tools & Monitoring
+* **Sistem Kaynakları:** İşlemci (CPU) ne kadar yoruluyor? RAM doldu mu? Disk alanınız bitti mi?
+* **Blockchain Senkronizasyonu:** Node'unuz ağdaki en son bloğa ulaştı mı (`catching_up` kontrolü)?
+* **Blok Yüksekliği:** Şu an kaçıncı bloktasınız?
 
-### 1. Node Health Checker (`check_health.sh`)
-A lightweight bash script designed to monitor the status of the RepublicAI node and system resources in real-time.
+---
 
-**Features:**
-- **System Metrics:** CPU Load, RAM usage, and Disk space availability.
-- **Node Status:** Fetches current block height and synchronization status (`catching_up`) via local RPC.
-- **Error Handling:** Alerts if the RPC is unreachable or the node process is down.
+## 🚀 Nasıl Kullanılır? (Adım Adım Rehber)
 
-**How to Execute:**
+Hiç kod bilmeseniz bile sunucunuzda aşağıdaki 3 adımı sırayla uygulayarak bu aracı çalıştırabilirsiniz:
+
+### 1. Aracı Sunucunuza İndirin
+Hazırladığım kodu kendi sunucunuza çekmek için bu komutu yapıştırın:
 ```bash
+wget [https://raw.githubusercontent.com/RepublicAI/networks/main/testnet/goldify/check_health.sh](https://raw.githubusercontent.com/RepublicAI/networks/main/testnet/goldify/check_health.sh)
+
+2. Çalıştırma İzni Verin
+Dosyayı bir program gibi çalışabilir hale getirmek için bu izni verin:
+
 chmod +x check_health.sh
+
+3. Aracı Başlatın
+Tüm verileri görmek için bu komutu yazın:
+
+
 ./check_health.sh
+
+
+📊 Doğrulayıcı (Validator) Bilgileri
+Bu node ve araç seti aşağıdaki kimlik bilgileriyle yönetilmektedir:
+
+Moniker (Takma Ad): goldify
+
+Cüzdan Adresi: rai1kyvgpy7yt6350xkh3h4s5cdm8uhuj3sqhjds9t
+
+Node Tipi: Validator Candidate (Testnet)
+
+
+
+📝 Teknik Rapor (report.md)
+Sunucunun donanım özellikleri, çalışma stabilitesi ve ağ performansı hakkındaki detaylı teknik verilere bu klasördeki report.md dosyasından ulaşabilirsiniz.
+
+Developed as a contribution to the RepublicAI Developer Community by goldify.
+
+
